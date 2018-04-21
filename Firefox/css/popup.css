@@ -1,0 +1,472 @@
+html{
+	min-height:380px;
+	width:300px;
+	height:auto;
+}
+
+body{
+	margin:0;
+	min-height:380px;
+	width:300px;
+	height:auto;
+}
+
+.navBar{
+	display:block;
+	height:40px;
+	width:100%;
+	background-color:#003d99;
+}
+
+.settingsButton{
+	color:#fff;
+	background-color:#003d99;
+	border:none;
+	outline:none;
+	display:inline-block;
+	float:right;
+	width:40px;
+	height:40px;
+	text-align:center;
+	vertical-align:middle;
+	font-size:26px;
+	padding:0 0 2px 0;
+}
+
+.settingsButton:hover{
+	background-color:#3385ff;
+	cursor:pointer;
+}
+
+.infoButton{
+	color:#fff;
+	background-color:#003d99;
+	border:none;
+	outline:none;
+	display:inline-block;
+	float:left;
+	width:40px;
+	height:40px;
+	text-align:center;
+	vertical-align:middle;
+	font-size:24px;
+}
+
+.infoButton:hover{
+	background-color:#3385ff;
+	cursor:pointer;
+}
+
+.infoImgContainer{
+	position:absolute;
+	top:50px;
+	left:102px;
+	width:96px;
+	height:96px;
+}
+
+.infoImg{
+	width:100%;
+	height:100%;
+}
+
+.nameContainer{
+	position:absolute;
+	top:160px;
+	left:80px;
+	width:140px;
+	height:auto;
+}
+
+.ded{
+	color:#de5e60;
+	font-family:TitilliumText25L;
+	text-align:center;
+	font-size:16px;
+	position:absolute;
+	bottom:80px;
+	left:80px;
+}
+
+.nameImg{
+	width:100%;
+}
+
+.creditsLink{
+	font-size:12px;
+	position:absolute;
+	bottom:14px;
+	left:15px;
+	color:#595959;
+	text-decoration:none;
+}
+
+.loginButtonContainer{
+	display:block;
+	height:300px;
+	width:300px;
+}
+
+.loginButton{
+	color:#999999;
+	background-color:#e6e6e6;
+	border:none;
+	outline:none;
+	width:300px;
+	height:296px;
+	text-align:center;
+	vertical-align:middle;
+	font-size:52px;
+	margin:2px 0 2px 0;
+	font-family:TitilliumText25L;
+	overflow:hidden;
+}
+
+.loginButton:hover{
+	cursor:pointer;
+	background-color:#d9d9d9;
+}
+
+.bottomCreditLine{
+	background-color:#5f5f5f;
+	display:block;
+	width:100%;
+	height:40px;
+}
+
+.bottomCreditText{
+	display:table-cell;
+	vertical-align:middle;
+	float:left;
+	color:#fff;
+	font-size:14px;
+	font-family:TitilliumText25L;
+	margin:11px 0 0 10px;
+}
+
+.helpButton{
+	color:#fff;
+	background-color:#5f5f5f;
+	border:none;
+	outline:none;
+	display:inline-block;
+	float:right;
+	width:40px;
+	height:40px;
+	text-align:center;
+	vertical-align:middle;
+	font-size:24px;
+	transform:none;
+	transition:0.5s;
+}
+
+.helpButton:hover{
+	background-color:#3385ff;
+	cursor:pointer;
+}
+
+.contactUs{
+	display:block;
+	background-color:#5f5f5f;
+	color:#fff;
+	width:250px;
+	position:fixed;
+	z-index:1;
+	right:-260px;
+	bottom:0;
+	overflow-x:hidden;
+	transform:none;
+	transition:0.5s;
+	height:38px;
+	padding:0px 0px 2px 10px;
+	font-size:14px;
+	font-family:TitilliumText25L;
+}
+
+/*-----------------------------------------------Settings overlay----------------------*/
+.settingsOverlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: -100%;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+	transform:none;
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.closeSettingsButton {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    font-size: 32px;
+	color:#fff;
+}
+
+.closeSettingsButton:hover{
+	cursor:pointer;
+}
+
+.IPText{
+	position: absolute;
+    top: 13px;
+    left: 65px;
+	width: 100px;
+	height:25px;
+    border: 2px solid #b3b3b3;
+	outline:none;
+	border-radius:3px;
+	background-color:#d9d9d9;
+	text-align:right;
+	padding:0 5px 0 0;
+	font-family:TitilliumText25L;
+}
+
+.PortText{
+	position: absolute;
+    top: 13px;
+    left: 175px;
+	width: 60px;
+	height:25px;
+    border: 2px solid #b3b3b3;
+	outline:none;
+	border-radius:3px;
+	background-color:#d9d9d9;
+	text-align:left;
+	padding:0 0 0 5px;
+	font-family:TitilliumText25L;
+}
+
+.downloadButton{
+	position:absolute;
+	top:17px;
+	left:260px;
+	outline:none;
+}
+
+.downloadButton:hover{
+	cursor:pointer;
+}
+
+.downloadButtonImg{
+	width:20px;
+	height:20px;
+}
+
+.tableContainer{
+	height:270px;
+	width:290px;
+	position:absolute;
+	top:55px;
+	left:0;
+	max-height:270px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.listTable{
+	color:#000;
+	width:280px;
+	text-align:center;
+	vertical-align:middle;
+	background-color:#f2f2f2;
+	font-family:TitilliumText25L;
+	margin:0px 10px 0px 10px;
+}
+
+th, td{
+	border-bottom:1px solid #d9d9d9;
+	padding:5px;
+}
+
+.usernameData, .passwordData{
+	width:120px;
+	height:40px;
+}
+
+.checkboxClass{
+	width:40px;
+	height:40px;
+}
+
+.usernameText, .passwordText{
+	width:100%;
+	height:100%;
+	outline:none;
+	border:none;
+	background-color:#f2f2f2;
+	font-family:TitilliumText25L;
+}
+
+.bottomButtons{
+	width:100%;
+	height:40px;
+	display:block;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+
+.addButton{
+	font-family:TitilliumText25L;
+	color:#000;
+	margin:0px 0px 5px 15px;
+	background-color:#2eb82e;
+	width:80px;
+	height:30px;
+	display:inline-block;
+	outline:none;
+	border:none;
+	float:left;
+	border-radius:3px;
+}
+
+.addButton:hover{
+	background-color:#248f24;
+	cursor:pointer;
+}
+
+.deleteButton{
+	font-family:TitilliumText25L;
+	color:#000;
+	margin:0px 0px 5px 13px;
+	background-color:#e62e00;
+	width:80px;
+	height:30px;
+	display:inline-block;
+	outline:none;
+	border:none;
+	float:left;
+	border-radius:3px;
+}
+
+.deleteButton:hover{
+	background-color:#b32400;
+	cursor:pointer;
+}
+
+.saveButton{
+	font-family:TitilliumText25L;
+	color:#000;
+	margin:0px 0px 5px 13px;
+	background-color:#005ce6;
+	width:80px;
+	height:30px;
+	display:inline-block;
+	outline:none;
+	border:none;
+	float:left;
+	border-radius:3px;
+}
+
+.saveButton:hover{
+	background-color:#0047b3;
+	cursor:pointer;
+}
+
+
+/*-----------------------------------Info Overlay----------------------------------*/
+.infoOverlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: -100%;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+	transform:none;
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.infoContent{
+	position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.closeInfoButton {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 32px;
+	color:#fff;
+}
+
+.closeInfoButton:hover{
+	cursor:pointer;
+}
+
+
+/*---------------------------Ripple effect-------------------------------*/
+.rip {
+  position: relative;
+  overflow: hidden;
+}
+
+.rip:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  background: #e6e6e6;
+  border-radius: 100%;
+  opacity: .6;
+  transform: scale(0);
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.rip:not(:active):after {
+  animation: ripple 1.5s ease-out;
+}
+
+/* fixes initial animation run, without user input, on page load.
+ */
+.rip:after {
+  visibility: hidden;
+}
+
+.rip:focus:after {
+  visibility: visible;
+}
+
+/*--------------------------------------------Loader----------------------------------------------*/
+.loader{
+	border:6px solid #e6e6e6;
+	border-bottom:6px solid #003d99;
+	border-radius:50%;
+	width:50px;
+	height:50px;
+	animation:spin 1s linear infinite;
+	margin:auto;
+}
+
+@keyframes spin{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
