@@ -4,20 +4,20 @@ Save all known credentials of Cyberoam captive portal once and leave it to the a
 
 Note: All credentials are stored locally and synced with browser's sync API. We don't store your credentials on our servers.
 
-## Features
+### Features
 + Multiple credentials
 + Sync data across devices
 + One click login
 
-# Demo
+### Demo
 ![Demo](demo.gif)
 
-# Installation
+### Installation
 
-### Chrome
+#### Chrome
 Download from [web-store](https://chrome.google.com/webstore/detail/logger-for-cyberoam/okaefnjlagmfedplkgiinpjgmhgaalcn)
 
-### Firefox
+#### Firefox
 Download from [Firefox addons](https://addons.mozilla.org/en-US/firefox/addon/logger-for-cyberoam/)
 
 Voila, you have just made your life a lot easier!
